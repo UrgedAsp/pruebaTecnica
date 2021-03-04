@@ -13,7 +13,7 @@
                 <!-- Tipo de producto de kind 1-->
                 <div class="container" *ngIf="producto.product_data.kind == 1; else tipo2">
                     <div class="row flex-container">
-                        <div class="col" style="flex-basis:200px">
+                        <div class="col" style="flex-grow: 4;">
                             <img src='https://assets.compramass.com/products/{{producto.product_data.ean}}-80@3x.jpg' style="height: 150px; width: 150px;">
                         </div>
                         <div class="col" style="flex-grow: 4;">
@@ -24,7 +24,7 @@
                                 {{producto.product_data.price | currency}}
                             </p>
                         </div>
-                        <div class="col" style="flex-basis:200px">
+                        <div class="col" style="flex-grow :4; margin-left: 0px;">
                             <button class="btn-grad">Comprar</button>
                         </div>
                     </div>
